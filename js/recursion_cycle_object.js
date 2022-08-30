@@ -30,3 +30,18 @@ console.log("_______________________Random______________________");
 const random = [Math.floor(Math.random() * 999)];
 
 console.log(random);
+console.log("_______________________Function in Object______________________");
+
+const wizard = {
+  name: "Пендальф",
+  level: 2,
+  say: function () {
+    console.log(`ARrrrrr`);
+  },
+  levelUp: function (level) {
+    wizard.level = level;
+  },
+};
+
+console.log(wizard);
+console.log(wizard.say);
